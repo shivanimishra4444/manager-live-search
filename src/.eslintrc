@@ -1,0 +1,28 @@
+{ 
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint",
+      "prettier",
+      "react-hooks"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:@typescript-eslint/recommended",
+      "prettier"
+    ],
+    "rules": {
+      "no-console": 0,       // Means off
+      "prettier/prettier": 1, // Means error
+      "react-hooks/rules-of-hooks": 1,
+      "react-hooks/exhaustive-deps": 1,
+      "react/prop-types": 0,
+      "@typescript-eslint/no-var-requires": 0,// no use of var
+      "@typescript-eslint/explicit-module-boundary-types":0 // no error for not using JSX.Element
+    },
+    "env": {
+      "browser": true, //"browser": true your env to include global variables (like document, window, etc.)
+      "node": true
+    }
+  }
